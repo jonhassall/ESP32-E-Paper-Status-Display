@@ -15,3 +15,9 @@ Line 62 in [epdif.cpp](https://raw.githubusercontent.com/jonhassall/ESP32-E-Pape
 `SPI.begin(SCK_PIN, -1, MOSI_PIN, CS_PIN);`
 
 In example libraries, I found this line to be incorrect.
+
+Enjoy!
+
+![Photograph of ESP32 with E-Paper showing status display](https://www.jonhassall.com/assets/2019/10/esp32-1-768x1220.jpg)
+![Photograph of ESP32 with E-Paper showing status display](https://www.jonhassall.com/assets/2019/10/esp32-3-768x1555.jpg)
+![Photograph of ESP32 with E-Paper reverse side with attached battery](https://www.jonhassall.com/assets/2019/10/esp32-2-768x1144.jpg)
