@@ -142,6 +142,8 @@ void loop() {
     Serial.println("Disconnecting from WiFi");
     WiFi.disconnect();
     http.end(); //Free resources
+    WiFi.mode(WIFI_OFF);
+    btStop();
     Serial.println("Disconnected from WiFi");
 
     //Deserialize the JSON document
@@ -242,6 +244,7 @@ void loop() {
   epd.ClearFrame();
   /* Display deep sleep */
   epd.Sleep();
+  delay(100);
 
   Serial.println("Deep Sleeping...");
   esp_sleep_enable_timer_wakeup(TIME_TO_SLEEP * uS_TO_S_FACTOR);
